@@ -9,3 +9,20 @@ tasks:
     command: yarn run start
 
 
+# all branches to do prebuild
+github:
+  prebuilds:
+    branches: true 
+
+# enable useful plugins
+jetbrains:
+  phpstorm:
+    plugins:
+      - com.intellij.lang.jsgraphql
+      - org.sonarlint.idea
+      - com.intellij.ml.llm
+      - com.sourcegraph.jetbrains
+      - com.github.lppedd.idea-conventional-commit
+    # sometimes caused workspace with jetbrains not able to start, hence comment out
+    # prebuilds:
+      # version: stable
